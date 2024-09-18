@@ -186,7 +186,7 @@ function HeroSection({ icon }: any) {
   return (
     <>
       <div className=''>
-        <div className='flex flex-col xl:flex-row lg:max-w-[1000px] xl:max-w-[1300px] md:max-w-[850px]  max-w-[600px]  mx-auto shadow-md mt-36 border-2 border-gray-300 rounded-md'>
+        <div className='flex flex-col xl:flex-row lg:max-w-[1000px] xl:max-w-[1200px] md:max-w-[850px]  max-w-[600px]  mx-auto shadow-md mt-36 border-2 border-gray-300 rounded-md'>
           <div className='flex flex-col' style={{ backgroundColor: 'rgb(243, 247, 251)' }}>
             <div style={{ backgroundColor: '' }} className='lg:mx-9 mx-9 mt-10 '>
               <div className='grid grid-cols-3 gap-6 lg:grid-cols-5 shadow-lg border-[1px] lg:p-6 p-8 lg:space-x-2 space-x-8 space-y-6  '>
