@@ -10,6 +10,26 @@ import BtnDonwload from './BtnDonwload';
 import ScanTrack from './ScanTrack';
 import { Link } from 'react-router-dom';
 
+
+import { IoMdMenu } from "react-icons/io";
+import { FaLink } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { BiSolidPhoneCall } from "react-icons/bi";
+import { FaSms } from "react-icons/fa";
+import { BsPersonVcard } from "react-icons/bs";
+import { MdWhatsapp } from "react-icons/md";
+import { FaWifi } from "react-icons/fa";
+import { GrPaypal } from "react-icons/gr";
+import { BsCalendarEventFill } from "react-icons/bs";
+import { FaFilePdf } from "react-icons/fa";
+import { FaMobileAlt } from "react-icons/fa";
+import { FaImages } from "react-icons/fa";
+import { RiVideoFill } from "react-icons/ri";
+import { IoShareSocialSharp } from "react-icons/io5";
+import { BiSolidPlusSquare } from "react-icons/bi";
+import { Icons } from 'react-toastify';
+
+
 type Str = {
   png: string,
   PNG1: string,
@@ -17,8 +37,26 @@ type Str = {
 }
 
 
-function HeroSection() {
+function HeroSection({ icon }: any) {
 
+  const IconComponent = {
+    FaLink: FaLink,
+    MdEmail: MdEmail,
+    IoMdMenu: IoMdMenu,
+    BiSolidPhoneCall: BiSolidPhoneCall,
+    FaSms: FaSms,
+    BsPersonVcard: BsPersonVcard,
+    MdWhatsapp: MdWhatsapp,
+    FaWifi: FaWifi,
+    GrPaypal: GrPaypal,
+    BsCalendarEventFill: BsCalendarEventFill,
+    FaFilePdf: FaFilePdf,
+    FaMobileAlt: FaMobileAlt,
+    FaImages: FaImages,
+    RiVideoFill: RiVideoFill,
+    IoShareSocialSharp: IoShareSocialSharp,
+    BiSolidPlusSquare: BiSolidPlusSquare,
+  }
 
   // scannerButton
   let png = "Download";
@@ -61,40 +99,117 @@ function HeroSection() {
 
 
   const Links = [
-    { name: "Link", link: "/link", iconName: "link", p: "pl-8 pt-4 " },
-    { name: "E-mail", link: "/email", iconName: "mail" }
-    , { name: "Text", link: "/text", iconName: "menu" },
-    { name: "Call", link: "/call", iconName: "call" },
-    { name: "SMS", link: "/sms", iconName: "mail-open" },
-    { name: "V-Card", link: "/v-card", iconName: "id-card" },
-    { name: "Whatsapp", link: "/whatsapp", iconName: "logo-whatsapp" },
-    
-    { name: "WI-FI", link: "/wi-fi", iconName: "wifi" },
-    { name: "PayPall", link: "/paypall", iconName: "logo-paypal" },
-    { name: "Event", link: "/event", iconName: "folder" },
-    { name: "PDF", link: "/pdf", iconName: "document" },
-    { name: "APP", link: "/app", iconName: "call" },
-    { name: "Images", link: "/images", iconName: "images" },
-    { name: "Video", link: "/video", iconName: "videocam" },
-    { name: "Social Media", link: "/social-media", iconName: "share-social" },
+    {
+      contact: [
+        {
+          name: "Link",
+          link: "/link",
+          p: "pl-3 pt-4 ",
+          icons: FaLink
+        },
+        {
+          name: "E-mail",
+          link: "/email",
+          icons: MdEmail
+        },
+        {
+          name: "Text",
+          link: "/text",
+          icons: IoMdMenu
+        },
+        {
+          name: "Call",
+          link: "/call",
+          icons: BiSolidPhoneCall
+        },
+        {
+          name: "SMS",
+          link: "/sms",
+          icons: FaSms
+        },
+        {
+          name: "V-Card",
+          link: "/v-card",
+          icons: BsPersonVcard
+        },
+        {
+          name: "Whatsapp",
+          link: "/whatsapp",
+          icons: MdWhatsapp
+        },
+        {
+          name: "WI-FI",
+          link: "/wi-fi",
+          icons: FaWifi
+        },
+        {
+          name: "PayPall",
+          link: "/paypall",
+          icons: GrPaypal
+        },
+        {
+          name: "Event",
+          link: "/event",
+          icons: BsCalendarEventFill
+        },
+        {
+          name: "PDF",
+          link: "/pdf",
+          icons: FaFilePdf
+        },
+        {
+          name: "APP",
+          link: "/app",
+          icons: FaMobileAlt
+        },
+        {
+          name: "Images",
+          link: "/images",
+          icons: FaImages
+        },
+        {
+          name: "Video",
+          link: "/video",
+          icons: RiVideoFill
+        },
+        {
+          name: "Social Media",
+          link: "/social-media",
+          icons: IoShareSocialSharp,
+        }
 
+      ]
+    }
   ];
 
 
   return (
     <>
       <div className=''>
-        <div className='flex flex-col md:flex-row  lg:max-w-[1150px] md:max-w-[820px] max-w-[550px]  mx-auto shadow-md mt-28 border-2 border-gray-300'>
-          <div className='flex flex-col ' style={{ backgroundColor: 'rgb(243, 247, 251)' }}>
-            <div style={{ backgroundColor: '' }} className='lg:mx-9 mx-9 mt-8 flex'>
-              <div className='grid grid-cols-3 gap-6 lg:grid-cols-5 shadow-lg border-[1px] lg:p-6 p-8 lg:space-x-2 space-x-8 space-y-4'>
+        <div className='flex flex-col xl:flex-row lg:max-w-[1000px] xl:max-w-[1400px] md:max-w-[850px]  max-w-[600px]  mx-auto shadow-md mt-36 border-2 border-gray-300 rounded-md'>
+          <div className='flex flex-col' style={{ backgroundColor: 'rgb(243, 247, 251)' }}>
+            <div style={{ backgroundColor: '' }} className='lg:mx-9 mx-9 mt-10 '>
+              <div className='grid grid-cols-3 gap-6 lg:grid-cols-5 shadow-lg border-[1px] lg:p-6 p-8 lg:space-x-2 space-x-8 space-y-6  '>
+
                 {
-                  Links.map((link) => (
-                    <div key={link.name} className={`hover:border-[1px] duration-1000 border-red-400 inline-f ${link.p}`}>
-                      <ion-icon name={link.iconName}></ion-icon>
-                      <Link key={link.name} to={link.link}>{link.name}</Link>
-                    </div>
-                  ))
+                  Links.map((e, i) => {
+                    return (
+                      <>
+                        {
+                          e.contact.map((e, i) => {
+                            return (
+                              <div key={e.name} className={`hover:border-[1px] duration-1000 border-red-400 inline-flex ${e.p} space-x-1  flex text-[#2a354f]`}>
+                                 <span className='mt-2 text-[18px]' ><e.icons /></span>
+                                <Link to={e.link} className='text-[18px]'>{e.name}
+                                </Link>
+                              </div>
+                            );
+                          })
+                        }
+                      </>
+                    );
+                  })
+
                 }
               </div>
             </div>

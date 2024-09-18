@@ -14,6 +14,12 @@ import QrGenerator from './QrGenerator'
 
 function MainPage() {
 
+
+
+  const icon = [
+    {link: 'FaHome'}
+  ]
+
   const name= 'DYNAMIC';
   const DesName='Dynamic QR Codes Explains'
   const ShortName='Dynamic'
@@ -21,7 +27,9 @@ function MainPage() {
   return (
     <>
       <NavBar />
-      <HeroSection />
+      {
+        <HeroSection icon={icon}/>
+      }
       <CustomiseCard />
        <CompaniesLogo />
        <BenefitsQR />

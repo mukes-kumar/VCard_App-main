@@ -30,5 +30,4 @@ export {
   RiVideoFill,
   IoShareSocialSharp,
   BiSolidPlusSquare,
-  
 }

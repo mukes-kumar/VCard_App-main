@@ -11,9 +11,9 @@ function ScannerHerosection(props:any) {
   return (
     <>
 
-      <div className='h-auto order-3 lg:order-2 md:border-l-2 border-gray-300 md:w-96 w-auto flex justify-center'>
-        <div className='h-auto order-3 lg:order-2 md:border-l-2 border-gray-300 md:w-96 w-auto flex justify-center'>
-          <div className={`${props.isOpacity ? 'opacity-[1]' : 'opacity-[0.3]'} max-w-[450px]`}>
+      <div className='h-auto order-3 lg:order-2 md:border-l-[1px] border-gray-300 md:w-96 w-auto flex justify-center'>
+        <div className='ml-10  h-auto order-3 lg:order-2 md:border-l-1 border-gray-300 md:w-96 w-auto flex justify-center'>
+          <div className={`${props.isOpacity ? 'opacity-[1]' : 'opacity-[0.3]'} max-w-[500px]`}>
             <div className='flex justify-center items-center m-8 lg:ml-8 border-2 border-gray-400  p-3'>
 
               <div className="qr-generator-container ">
@@ -22,7 +22,7 @@ function ScannerHerosection(props:any) {
 
                 </div>
                 <div className="qr-code">
-                  <QRCode value={props.vCardString} size={200} level={"H"}
+                  <QRCode value={props.vCardString} size={300} level={"H"}
                   />
                 </div>
               </div>
