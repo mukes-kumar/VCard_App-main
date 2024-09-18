@@ -22,7 +22,7 @@ function ScannerHerosection(props:any) {
 
                 </div>
                 <div className="qr-code">
-                  <QRCode value={props.vCardString} size={300} level={"H"}
+                  <QRCode value={props.vCardString} size={270} level={"H"}
                   />
                 </div>
               </div>
