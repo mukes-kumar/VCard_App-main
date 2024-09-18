@@ -9,6 +9,7 @@ This is a good starting point for your next project that needs firebase auth
 </div>
 
 # Setup
+# For Push==>   git push --set-upstream origin main        
 
 - Clone the project with 
 ```
@@ -19,11 +20,6 @@ git clone https://github.com/IgorBayerl/react-vite-tailwind-firebase-auth-templa
 cd react-vite-tailwind-firebase-auth-template
 ```
 - Install the dependencies with
-```
-yarn
-```
+
 - Configure the .env file with your firebase credentials
 - run with
-```
-yarn dev
-```
