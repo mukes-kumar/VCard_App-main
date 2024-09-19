@@ -11,7 +11,7 @@ function Button() {
         
         <div className={`hidden md:flex px-3 py-[3px] justify-center items-center bg-yellow-500 text-black rounded font-bold text-md absolute md:right-6 right-8 top-4 cursor-pointer $`}>
         <FaArrowRight />
-          <Link to="/login" className=''>Log In</Link>
+          <Link to="/log In" className=''>Log In</Link>
         </div>
 
         <div className={`flex justify-center items-center py-[2px] bg-blue-600 text-white rounded font-bold cursor-pointer sm:px-2  px-4 text-md absolute md:right-32 right-36 top-4`}>

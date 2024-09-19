@@ -1,0 +1,116 @@
+import React from 'react'
+import { FaLink, FaSms, FaWhatsapp, FaWifi, } from "react-icons/fa";
+import { MdEmail, MdOutlineMenu, MdCall } from "react-icons/md";
+
+import { BsFillPersonVcardFill, BsCalendar2EventFill } from "react-icons/bs";
+import { Link } from 'react-router-dom';
+
+
+function QRCodeType(props: any) {
+
+  const items = [
+    {
+      contact: [
+        {
+          name: 'Link',
+          Des: 'Link to any Website URL',
+          icon: FaLink 
+        },
+        {
+          name: 'E-mail',
+          Des: 'Send an email',
+          icon: MdEmail
+        },
+        {
+          name: 'Text',
+          Des: 'Share Text',
+          icon: MdOutlineMenu
+        },
+        {
+          name: 'Call',
+          Des: 'Make a call',
+          icon: MdCall
+        },
+        {
+          name: 'SMS',
+          Des: 'Send message',
+          icon: FaSms
+        },
+        {
+          name: 'Whatsapp',
+          Des: 'Send whatsapp message',
+          icon: FaWhatsapp
+        },
+        {
+          name: 'WiI-FI',
+          Des: 'Connect to WI-FI',
+          icon: FaWifi
+        },
+        {
+          name: 'Vcard',
+          Des: 'Save a contact to the phone scanning',
+          icon: BsFillPersonVcardFill
+        },
+        {
+          name: 'Event',
+          Des: 'Invite people to your event',
+          icon: BsCalendar2EventFill
+        },
+      ]
+    }
+
+  ]
+  return (
+    <>
+      <div className='relative pt-[5rem] pb-[5rem] block '>
+        <div className='w-[100%] pr-[15px] pl-[15px] ml-auto mr-auto'>
+          <h2 className='font-serif font-semibold mb-[2rem] text-[2rem] text-[#2a354f] text-center'>{props.title}</h2>
+          <div className='text-center'>
+            <p className='text-[#66799e] text-[1rem] mb-[1.4rem] font-normal font-serif'>Different QR Code types you can use for Static QR Codes.
+            </p>
+          </div>
+          <div className='ml-5 md:ml-10 mr-10 grid md:grid-cols-2 lg:grid-cols-3 space-x-4 space-y-3'>
+          {
+
+            items.map((e, i) => {
+              return (
+                <>
+                  {
+                    e.contact.map((e, i) => {
+                      return (
+                        <>
+                          <div className='grid '>
+                            <div className="card border-2 border-gray-300 rounded-lg p-4  pb-8 space-y-7 ">
+                              <div className="mt-2 text-center text-gray-500 ">
+                                
+                              </div>
+                              <div className="flex items-center justify-center">
+                              <div className=''>
+                                  <span className='text-4xl text-green-700'>
+                                    <e.icon />
+                                  </span>
+                                </div>
+                                <h2 className=" text-center text-2xl font-semibold">{e.name}</h2>
+                              </div>
+                              <p className="text-[#66799e] text-center text-[23px]">{e.Des}</p>
+                              <div className="mt-4">
+                                <Link to='/' className="bg-blue-500 text-white text-2xl  px-48 md:px-20 ml-6 py-2">Choose</Link>
+                              </div>
+                            </div>
+                          </div>
+                        </>
+                      )
+                    })
+                  }
+                </>
+              )
+            })
+          }
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default QRCodeType

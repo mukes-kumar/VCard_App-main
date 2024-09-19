@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Button from './Button';
 import { IoMenu } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 function NavBar() {
 
@@ -32,10 +33,10 @@ function NavBar() {
     <>
       <nav className="w-full fixed top-0 left-0 pb-6 flex shadow-md pl-10 z-10 items-center bg-white">
         <div className='flex'>
-          <a href="#" className="font-bold text-lg ">
+          <Link to="/login" className="font-bold text-lg ">
             <img src='https://qr.io/logo/logo-title-white.png' alt="Logo Light" className='w-[103px] h-6 ml-6' />
             <img src='https://qr.io/logo/logo-title.png' className='w-[103px] h-7 ' alt='Logo dark' />
-          </a>
+          </Link>
         </div>
         <div onClick={ClickCruss} className='text-3xl absolute right-20 sm:right-16 md:top-6 top-4  cursor-pointer md:hidden'>
         <IoMenu  className={`${open === false ? 'show' : 'hidden'}`}/>

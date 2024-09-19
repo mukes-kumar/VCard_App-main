@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 // import img1 from '.../Image1/static.png';
 
 
@@ -14,15 +15,15 @@ function StaticCart({staticN, DesStatic , ShortStaticN} : cart) {
   return (
     <>
       <div className='flex max-w-[100%] relative pr-[15px] pl-[15px]'>
-        <a href='/static' className='hover:mt-[-4px] delay-200 relative transition-all shadow-sm border border-[#f3f7fa] flex flex-col bg-[#fff] '>
-          <div className='pl-[3rem] pb-[3rem] px-[3rem] pt-[1.5rem] block'>
+        <Link to='/static' className='hover:mt-[-4px] delay-200 relative transition-all shadow-sm border border-[#f3f7fa] flex flex-col bg-[#fff] '>
+          <div className='pl-[2rem] pb-[3rem] px-[2rem] pt-[1.5rem] block'>
             <span className="text-center px-2 py-[2px] rounded-xl text-sm	 text-[#fff] bg-[rgb(0,90,212)]">{staticN}</span>
             <div>
               <img src='https://qr.io/assets/img/static.png' className="block ml-auto mr-auto max-w-[100%] h-auto border-none" alt='Not visible' />
             </div>
-            <h5 className='mb-[1rem] font-semibold text-lg text-[#2a354f] mt-7'>{DesStatic}</h5>
+            <h5 className='text-[1.8rem] mb-[1rem] font-semibold text-lg text-[#2a354f] mt-7'>{DesStatic}</h5>
 
-            <p className='text-[#66799e] mb-0 font-sans text-[1rem] font-light'>
+            <p className='text-[#66799e] mb-0 font-sans text-[1.3rem] font-light'>
               With {ShortStaticN} Qr Codes you can create a customized landing page for your QR Code that can be changed and updated whenever you want no matter if the QR Code is created or even if it went public.
               <br />
               <br />
@@ -32,7 +33,7 @@ function StaticCart({staticN, DesStatic , ShortStaticN} : cart) {
               This QR Code type is most used by business owners (restaurants, gyms, clothing stores, etc.), artists, influencers, and non-developers users.
             </p>
           </div>
-        </a>
+        </Link>
       </div>
     </>
   )

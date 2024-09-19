@@ -1,4 +1,7 @@
 import React from 'react'
+import { TbHandFinger } from "react-icons/tb";
+import { Link } from 'react-router-dom';
+import { LiaArrowUpSolid } from "react-icons/lia";
 
 function UseSection() {
   return (
@@ -14,6 +17,11 @@ function UseSection() {
               </p>
             </div>
           </div>
+          <span className='absolute left-[28rem] text-white text-4xl'>
+          <LiaArrowUpSolid />
+          </span>
+          <Link to='/' className="bg-blue-500 text-white text-2xl  px-48 md:px-20 ml-24 py-8">Generate QR Code 
+          </Link>
         </div>
       </div>
     </>

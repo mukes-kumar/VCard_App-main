@@ -10,12 +10,12 @@ import DynamicCart from './Companies/DynamicVsStatic/DynamicCart'
 import UseSection from './HowToUseSection/UseSection'
 import QRGenator from './MainSection/QRGenator'
 import QrGenerator from './QrGenerator'
+import QuickRespose from './HowToUseSection/QuickRespose'
+import QRCodeType from './HowToUseSection/QRCodeType'
+import FooterSection from './Footer/FooterSection'
 
 
 function MainPage() {
-
-
-
   const icon = [
     {link: 'FaHome'}
   ]
@@ -32,12 +32,14 @@ function MainPage() {
       }
       <CustomiseCard />
        <CompaniesLogo />
-       <BenefitsQR />
+       <BenefitsQR title={'Benefits from QR.io'}/>
        <DynamicVSStaticQR />
        <DynamicCart name={name} DesName={DesName} ShortName={ShortName}/>
        <UseSection />
-       {/* <QRGenator /> */}
-       {/* <QrGenerator /> */}
+       <QuickRespose />
+       <QRCodeType title={'QR Code Types'}/>
+
+       <FooterSection />
     </>
   )
 }

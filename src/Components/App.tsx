@@ -29,8 +29,19 @@ import AppMain from './MainSection/AllLinks/AppMain'
 import ImagesMain from './MainSection/AllLinks/ImagesMain'
 import VideoMain from './MainSection/AllLinks/VideoMain'
 import SocialMediaMain from './MainSection/AllLinks/SocialMediaMain'
+import DynamicCart from './Companies/DynamicVsStatic/DynamicCart'
+import BenefitsQR from './Companies/BenefitsQR'
+import QRCodeType from './HowToUseSection/QRCodeType'
+
+
+
 
 function App() {
+
+  const name = 'DYNAMIC';
+  const DesName = 'Dynamic QR Codes Explains'
+  const ShortName = 'Dynamic'
+
   const providers = [ToastProvider, AuthProvider, ApiProvider]
   return (
     <Router>
@@ -41,13 +52,40 @@ function App() {
             <Route path="/update-profile" element={<UpdateProfile />} />
             <Route path="projects" element={<Projects />} />
           </Route>
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/signup" element=
+            {
+              <>
+                <NavBar />
+                <Signup />
+              </>
+            } />
           <Route path="/login" element={<MainPage />} />
-          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/log In" element=
+            {
+              <>
+                <NavBar />
+                <Login />
+              </>
+            } />
 
-          <Route path="/link" element={<LinkMain />} />
+          <Route path="/forgot-password" element=
+            {
+              <>
+                <NavBar />
+                <ForgotPassword />
+              </>
+            } />
+
+          <Route path="/link" element=
+            {
+              <>
+                <NavBar />
+                <LinkMain />
+              </>
+
+            } />
           <Route path="/email" element={<EmailMain />} />
-          
+
           <Route path="/text" element={<TextMain />} />
           <Route path="/call" element={<CallMain />} />
           <Route path="/sms" element={<SmsMain />} />
@@ -61,6 +99,23 @@ function App() {
           <Route path="/images" element={<ImagesMain />} />
           <Route path="/video" element={<VideoMain />} />
           <Route path="/social-media" element={<SocialMediaMain />} />
+
+          <Route path="/Dynamic" element=
+            {
+              <>
+                <NavBar />
+                <BenefitsQR title={'Dynamic QR Codes'} mt={'mt-40'} />
+                <QRCodeType title={'Dynamic QR Codes'}/>
+              </>
+            } />
+          <Route path="/static" element=
+            {
+              <>
+                <NavBar />
+                <BenefitsQR title={'Static QR Codes'} mt={'mt-40'} />
+                <QRCodeType title={'Static QR Codes'}/>
+              </>
+            } />
 
         </Routes>
 

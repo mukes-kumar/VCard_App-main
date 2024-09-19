@@ -37,6 +37,7 @@ export default function Signup() {
 
   return (
     <>
+    
       <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-md space-y-8">
           <div>
@@ -108,7 +109,7 @@ export default function Signup() {
             <div className="text-sm text-center">
               <Link
                 className="font-medium text-indigo-600 hover:text-indigo-500"
-                to="/login"
+                to="/log In"
               >
                 Already have an account?
               </Link>
