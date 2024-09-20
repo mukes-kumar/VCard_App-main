@@ -6,16 +6,16 @@ import { PiArrowFatLineUpFill } from "react-icons/pi";
 function QuickRespose() {
   return (
     <>
-      <div className='text-[#fff] lg:relative lg:pt-[7rem] lg:pb-[9rem] bg-[#11ab7c] block'>
-        <div className='min-w-[568px] md:max-w-[920px] lg:max-w-[1450px] w-[100%] pr-[px] pl-[px] mr-auto'>
-          <div className='items-center flex flex-wrap mr-[px] ml-[50px] lg:ml-[100px]'>
+      <div className='text-[#fff] lg:relative lg:pt-[112px] lg:pb-[144px] bg-[#11ab7c] block'>
+        <div className='min-w-[380px] md:max-w-[920px] lg:max-w-[1450px]  pr-[px] pl-[px] mr-auto'>
+          <div className='items-center flex flex-wrap mx-[14px] md:ml-[50px] lg:ml-[100px]'>
             <div className='flex flex-col max-w-[100%] relative w-[100%] pr-[px] '>
               <span className='text-slate-200 font-normal block mb-[20px] mt-20 text-2xl'>What are QR Codes?
               </span>
               
               <h2 className='text-[#fff] font-sans font-bold mb-[20px] text-[36px] md:text-[45px]'>QR Codes stands for 'Quick Response'
               </h2>
-              <p className='text-[1rem] lg:text-[1.6rem] font-sans text-slate-200'>
+              <p className='text-[16px] lg:text-[25px] font-sans text-slate-200'>
                 They were created in 1994 by Denso Wave to track vehicles during manufacturing. They quickly gain popularity when it spread to smartphones.
                 <br />
                 You can now even scan QR Codes from your phone camera.
@@ -31,7 +31,7 @@ function QuickRespose() {
             </span>
             </Link>
 
-            <div className='mt-[3rem] grid md:grid-cols-2 space-x-4 space-y-3 max-w-[100%]  relative w-[100%] mr-10 md:ml-8 ml-1 pb-32'>
+            <div className='mt-[48px] grid md:grid-cols-2 space-x-4 space-y-3 max-w-[100%]  relative w-[100%] mr-2 md:ml-8 ml-1 pb-32'>
 
               <div className="card bg-white rounded-lg shadow-md px-6 md:px-12 py-7 md:py-20 mb-2">
                 <span className='text-black text-4xl '></span>

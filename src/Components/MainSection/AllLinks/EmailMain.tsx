@@ -1,8 +1,11 @@
 import React from 'react'
+import MainPage from '../../MainPage'
 
 function EmailMain() {
   return (
-    <div>EmailMain</div>
+    <>
+      <MainPage />
+    </>
   )
 }
 

@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { Link, useNavigate } from 'react-router-dom'
 
 
-function Button() {
+function Button(props:any) {
   return (
     <>
       <div className={`flex space-x-4 mt-3 md:ml-20 lg:ml-44 ml-36`}>
@@ -14,7 +14,7 @@ function Button() {
           <Link to="/log In" className=''>Log In</Link>
         </div>
 
-        <div className={`flex justify-center items-center py-[2px] bg-blue-600 text-white rounded font-bold cursor-pointer sm:px-2  px-4 text-md absolute md:right-32 right-36 top-4`}>
+        <div className={`${props.open === false ? 'show' : 'hidden'} flex justify-center items-center py-[2px] bg-blue-600 text-white rounded font-bold cursor-pointer sm:px-2  px-4 text-md absolute md:right-32 right-20 top-4`}>
         <FaUserPlus />
           <Link to="/signup" className='text-center'>Sign Up</Link>
         </div>

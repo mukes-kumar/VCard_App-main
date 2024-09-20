@@ -39,24 +39,7 @@ type Str = {
 
 function HeroSection({ icon }: any) {
 
-  const IconComponent = {
-    FaLink: FaLink,
-    MdEmail: MdEmail,
-    IoMdMenu: IoMdMenu,
-    BiSolidPhoneCall: BiSolidPhoneCall,
-    FaSms: FaSms,
-    BsPersonVcard: BsPersonVcard,
-    MdWhatsapp: MdWhatsapp,
-    FaWifi: FaWifi,
-    GrPaypal: GrPaypal,
-    BsCalendarEventFill: BsCalendarEventFill,
-    FaFilePdf: FaFilePdf,
-    FaMobileAlt: FaMobileAlt,
-    FaImages: FaImages,
-    RiVideoFill: RiVideoFill,
-    IoShareSocialSharp: IoShareSocialSharp,
-    BiSolidPlusSquare: BiSolidPlusSquare,
-  }
+
 
   // scannerButton
   let png = "Download";
@@ -104,7 +87,7 @@ function HeroSection({ icon }: any) {
         {
           name: "Link",
           link: "/link",
-          p: "pl-3 pt-4 ",
+          p: "pl-4 pt-5 ",
           icons: FaLink
         },
         {
@@ -185,11 +168,11 @@ function HeroSection({ icon }: any) {
 
   return (
     <>
-      <div className=''>
-        <div className='flex flex-col xl:flex-row lg:max-w-[900px] xl:max-w-[1400px] md:max-w-[850px]  max-w-[600px]  mx-auto shadow-md mt-36 border-2 border-gray-300 rounded-md'>
-          <div className='flex flex-col' style={{ backgroundColor: 'rgb(243, 247, 251)' }}>
+      
+        <div className='flex flex-col xl:flex-row lg:max-w-[900px]  xl:max-w-[1200px] md:max-w-[850px]  max-w-[390px]  mx-auto shadow-md mt-36 border-2 border-gray-300 rounded-md m-0'>
+          <div className='flex flex-col justify-around' style={{ backgroundColor: 'rgb(243, 247, 251)' }}>
             <div style={{ backgroundColor: '' }} className='lg:mx-9 mx-9 mt-10 '>
-              <div className='grid grid-cols-3 gap-6 lg:grid-cols-5 shadow-lg border-[1px] lg:p-6 p-8 lg:space-x-2 space-x-8 space-y-6  '>
+              <div className='grid grid-cols-3 gap-6 lg:grid-cols-5 shadow-lg border-[1px] lg:p-6 pr-6 lg:space-x-2 space-x-8 space-y-6 pb-7 '>
 
                 {
                   Links.map((e, i) => {
@@ -199,8 +182,8 @@ function HeroSection({ icon }: any) {
                           e.contact.map((e, i) => {
                             return (
                               <div key={e.name} className={`hover:border-[1px] duration-1000 border-red-400 inline-flex ${e.p} space-x-1  flex text-[#2a354f]`}>
-                                 <span className='mt-2 text-[18px]' ><e.icons /></span>
-                                <Link to={e.link} className='text-[18px]'>{e.name}
+                                 <span className={`mt-2 text-[15px] md:text-[18px] `} ><e.icons /></span>
+                                <Link to={e.link} className='text-[15px] md:text-[18px]'>{e.name}
                                 </Link>
                               </div>
                             );
@@ -218,7 +201,7 @@ function HeroSection({ icon }: any) {
           <ScannerHerosection isOpacity={isOpacity} vCardString={vCardString} />
 
         </div>
-      </div>
+      
     </>
   )
 }

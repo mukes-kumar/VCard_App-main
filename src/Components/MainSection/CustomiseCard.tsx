@@ -16,7 +16,7 @@ function CustomiseCard() {
   return (
     <>
 
-      <div className='m-24'>
+      <div className='m-5'>
         <div className="max-w-[950px] md:max-w-[850px] lg:max-w-[1060px] mx-auto bg-white flex md:flex-row flex-col  shadow-xl border-[1px] sm:mt-24">
           {
             productName.map((name) => (

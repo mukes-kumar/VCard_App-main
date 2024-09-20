@@ -62,14 +62,14 @@ function QRCodeType(props: any) {
   ]
   return (
     <>
-      <div className='relative pt-[5rem] pb-[5rem] block '>
+      <div className='relative pt-[80px] pb-[80px] block '>
         <div className='w-[100%] pr-[15px] pl-[15px] ml-auto mr-auto'>
-          <h2 className='font-serif font-semibold mb-[2rem] text-[2rem] text-[#2a354f] text-center'>{props.title}</h2>
+          <h2 className='font-serif font-semibold mb-[16px] text-[32px] text-[#2a354f] text-center'>{props.title}</h2>
           <div className='text-center'>
-            <p className='text-[#66799e] text-[1rem] mb-[1.4rem] font-normal font-serif'>Different QR Code types you can use for Static QR Codes.
+            <p className='text-[#66799e] text-[16px] mb-[22.4px] font-normal font-serif'>Different QR Code types you can use for Static QR Codes.
             </p>
           </div>
-          <div className='ml-5 md:ml-10 mr-10 grid md:grid-cols-2 lg:grid-cols-3 space-x-4 space-y-3'>
+          <div className='ml-0 md:ml-10 grid md:grid-cols-2 lg:grid-cols-3 space-x-4 space-y-3 mr-2'>
           {
 
             items.map((e, i) => {
@@ -94,7 +94,7 @@ function QRCodeType(props: any) {
                               </div>
                               <p className="text-[#66799e] text-center text-[23px]">{e.Des}</p>
                               <div className="mt-4">
-                                <Link to='/' className="bg-blue-500 text-white text-2xl  px-48 md:px-20 ml-6 py-2">Choose</Link>
+                                <Link to='/' className="bg-blue-500 text-white text-2xl  px-[90px] md:px-20 ml-6 py-2">Choose</Link>
                               </div>
                             </div>
                           </div>

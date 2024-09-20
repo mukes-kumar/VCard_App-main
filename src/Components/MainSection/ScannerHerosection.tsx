@@ -12,7 +12,7 @@ function ScannerHerosection(props:any) {
     <>
 
       <div className='h-auto order-3 lg:order-2 md:border-l-[1px] border-gray-300 flex justify-center'>
-        <div className='ml-10  h-auto order-3 lg:order-2 md:border-l-1 border-gray-300 flex justify-center'>
+        <div className='ml-0 md:ml10  h-auto order-3 lg:order-2 md:border-l-1 border-gray-300 flex justify-center mr-0'>
           <div className={`${props.isOpacity ? 'opacity-[1]' : 'opacity-[0.3]'} max-w-[500]`}>
             <div className='flex justify-center items-center m-8 lg:ml-8 border-2 border-gray-400  p-3'>
 
