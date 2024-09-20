@@ -38,7 +38,6 @@ function MainPage() {
        <UseSection />
        <QuickRespose />
        <QRCodeType title={'QR Code Types'}/>
-
        <FooterSection />
     </>
   )
