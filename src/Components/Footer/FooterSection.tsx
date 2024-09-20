@@ -7,9 +7,9 @@ import { FaFacebook } from "react-icons/fa";
 function FooterSection() {
   return (
     <>
-      <footer className="bg-[#f3f7fa] py-4">
+      <footer className="bg-[#f3f7fa] pt-10">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-3 grid-rows-2">
+          <div className="grid lg:grid-cols-3 space-y-8">
             <div className=' space-y-4'>
               <div className="">
                 <Link to="/login" className="font-bold text-lg ">
@@ -22,13 +22,20 @@ function FooterSection() {
                 <h3 className="font-serif text-[21px]  md:text-[24px] text-[#2a354f] font-semibold">Follow Us</h3>
                 <ul className="flex ">
                   <li ><a href="#" className='flex gap-4 text-[#2a354f] '>
-                    <span className='text-[28px]'> <FaFacebook />
+                    <span className='text-[28px]'>
+                      <a href='https://www.facebook.com/'>
+                        <FaFacebook />
+                      </a>
                     </span>
                     <span className='text-[28px]'>
-                      <FaSquareXTwitter />
+                      <a href='https://x.com/?lang=en'>
+                        <FaSquareXTwitter />
+                      </a>
                     </span>
                     <span className='text-[28px]'>
-                      <ImLinkedin />
+                      <a href='https://www.linkedin.com/feed/'>
+                        <ImLinkedin />
+                      </a>
                     </span>
                   </a></li>
 
@@ -67,7 +74,7 @@ function FooterSection() {
                   <li><a href="#">Cancel Subscription</a></li>
                 </ul>
               </div>
-              <div className="mb-4 sm:mb-0">
+              <div className="sm:mb-0">
                 <h3 className="font-serif text-[21px]  md:text-[24px] text-[#2a354f] font-semibold mb-[3px]">Company Cases</h3>
                 <ul className='grid  text-[#66799e] text-[19px]  md:text-[21px] space-y-2'>
                   <li><a href="#">About Us</a></li>
@@ -80,7 +87,7 @@ function FooterSection() {
             </div>
 
           </div>
-          <div className="mt-8 text-center flex flex-wrap justify-between">
+          <div className=" text-center flex flex-wrap justify-between mt-7 mb-4">
             <p className='text-[#66799e] font-sans '>© QR.io 2024. All rights reserved. QR Code is a registered trademark of DENSO WAVE INCORPORATED</p>
 
             <div className=''>
