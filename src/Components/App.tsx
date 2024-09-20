@@ -60,7 +60,7 @@ function App() {
                 <Signup />
               </>
             } />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<MainPage />} />
           <Route path="/log In" element=
             {
               <>
