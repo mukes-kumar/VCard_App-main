@@ -12,6 +12,7 @@ import { ApiProvider } from '../contexts/ApiContext'
 import 'react-toastify/dist/ReactToastify.min.css'
 import AppContextProviders from '../contexts/AppContextProvider'
 
+
 import NavBar from './NavBar/NavBar'
 import MainPage from './MainPage'
 import LinkMain from './MainSection/AllLinks/LinkMain'
@@ -59,7 +60,7 @@ function App() {
                 <Signup />
               </>
             } />
-          <Route path="/login" element={<MainPage />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/log In" element=
             {
               <>
